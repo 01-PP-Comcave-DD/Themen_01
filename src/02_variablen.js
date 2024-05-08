@@ -44,3 +44,17 @@
 // console.log("Inhalt: " + test); // Ausgabe Inhalt
 // console.log("Datentyp: " + typeof test); // Ausgabe Datentyp
 // console.log("----------------------------------");
+
+/* Variablen vs. Konstanten in JS */
+
+//Variable
+let test; //Variable : Deklaration
+test = "hi"; //Wertzuweisung (Inizialisierung)
+test = "hello"; //Überschreiben
+console.log("Inhalt: " + test); // Ausgabe
+
+// Konstante
+const test2 = "Moin"; //Deklaratin muss sofort angegeben werden
+test2 = "Mahlzeit"; //Lautzeitfehler (Runtimeerror) !!
+console.log("Inhalt: " + test2); // Ausgabe
+
