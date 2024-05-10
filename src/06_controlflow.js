@@ -52,15 +52,15 @@ console.log("------------------");
 /************ IF - ELSE IF  ************/
 // mit alternativen Fällen (älter, jünger, gleich alt)
 
- if(isJohnOlder) //Test
-{  // JA Codeblock Anfang
-    console.log("John ist älter!");
-}
-else if (isJohnEqual)
-{  // alternative zu Codeblock 1
-    console.log("Beide sind gleich alt!");
-}
- else
-{  // gemeinsame Alternative zwischen Codeblock 1 und 2 Codeblock Anfang
-    console.log("John ist jünger!");
-}
+//  if(isJohnOlder) //Test
+// {  // JA Codeblock Anfang
+//     console.log("John ist älter!");
+// }
+// else if (isJohnEqual)
+// {  // alternative zu Codeblock 1
+//     console.log("Beide sind gleich alt!");
+// }
+//  else
+// {  // gemeinsame Alternative zwischen Codeblock 1 und 2 Codeblock Anfang
+//     console.log("John ist jünger!");
+// }
