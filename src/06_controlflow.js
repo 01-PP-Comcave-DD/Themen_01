@@ -25,7 +25,25 @@ console.log("------------------");
 
 // if (false)  // fake it!
 // if(isJohnOlder) // Verweis auf ein Testergebnis
-if(ageJohn > ageMark); // Test an sich
-{                                       // Anfang Codeblock
+// if(ageJohn > ageMark); // Test an sich
+// {                                       // Anfang Codeblock
+//     console.log("John ist älter!");
+// }                                       // Ende Codeblock
+
+/*-------------------------------*/
+
+/************ IF - ELSE ************/
+// mit Alternative
+// entweder ja oder nein
+
+// if (true)  // Fake it
+// if (false)
+// if(isJohnOlder) //Verweis auf ein testergebnis
+if(ageJohn > ageMark)
+{  // JA Codeblock Anfang
     console.log("John ist älter!");
-}                                       // Ende Codeblock
+}
+else
+{  // NEIN (Alternative zum ersten Codeblock) Codeblock Anfang
+    console.log("John ist jünger!");
+}
