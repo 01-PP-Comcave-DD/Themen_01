@@ -44,7 +44,7 @@ function outputNames2(firstname) {    //Parameter
 outputNames3("Rene","heißt anders als du")
 
 const prompt = require('prompt-sync')({sigint: true});
-outputNames3(prompt("Vorname?: "),prompt("Nachname?: "))
+outputNames3(prompt("Vorname?: "),prompt("Nachname?: "))     // Piping
 
 function outputNames3(firstname, familyname) {    //Parameter
     console.log("Hallo, " + firstname + " " + familyname + "!");
