@@ -56,7 +56,7 @@ function outputNames3(firstname, familyname) {    //Parameter
 // Postulat: one function = one job (uncle Bob)
 // SRP "Single Responsibility Principle"
 
-outputNamesSRP("Rene","Heißt anders als du");
+// outputNamesSRP("Rene","Heißt anders als du");
 
 function outputNamesSRP(firstname, familyname) {    //Parameter
 
@@ -66,8 +66,26 @@ function outputNamesSRP(firstname, familyname) {    //Parameter
 
     // 2. Funktionalität: string output
     console.log(outputString);
-
 }
 
+//--------------------------------------------------------//
+/***** Funktionen 03b *****/
+
+output(getString("Rene", "Nachname"));
+
+// 1.Funktionalität: string composing
+function getString(firstName, familyName) {
+    const GAP = " ";
+    let outputString = "Hallo, " + firstName + GAP + familyName + "!"
+    return outputString;
+}
+    // 2. Funktionalität: string output
+// output("hi");     //zum Test
+// output(2);        //zum Test
+// output(true);     //zum Test
+
+function output(outputData) {
+    console.log(outputData);
+}
 
 
