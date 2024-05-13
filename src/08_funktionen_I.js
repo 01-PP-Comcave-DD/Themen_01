@@ -21,8 +21,18 @@ function test()     // Funktionsdeklaration (Name der Funktion)
 function outputNames() {
     // interne Variable | What happens in VEGAS ...
     let firstname = "Rene"
-
     console.log("Hallo, " + firstname + "!");
 
 }
 
+//--------------------------------------------------------//
+/***** Funktionen 02b *****/
+// 2b. Parametrisierung + Datenübergabe von AUSSEN
+
+outputNames2("Rene");          //Argumente --> Daten für die Parameter
+outputNames2("Patrick");
+outputNames2();      //<---- ohne Inhalt, deswegen der fehler undefined
+
+function outputNames2(firstname) {    //Parameter
+    console.log("Hallo, " + firstname + "!");
+}
