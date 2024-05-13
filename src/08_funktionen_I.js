@@ -41,11 +41,33 @@ function outputNames2(firstname) {    //Parameter
 /***** Funktionen 02c *****/
 // 2c. Mehrere Parameter / Argumente
 
-outputNames3("Rene","heißt anders als du")
+// outputNames3("Rene","heißt anders als du")
 
-const prompt = require('prompt-sync')({sigint: true});
-outputNames3(prompt("Vorname?: "),prompt("Nachname?: "))     // Piping
+// const prompt = require('prompt-sync')({sigint: true});
+// outputNames3(prompt("Vorname?: "),prompt("Nachname?: "))     // Piping
 
 function outputNames3(firstname, familyname) {    //Parameter
     console.log("Hallo, " + firstname + " " + familyname + "!");
 }
+
+//--------------------------------------------------------//
+/***** Funktionen 03a *****/
+// 03a. Vorbereitung -Trennen der Funktionalitäten
+// Postulat: one function = one job (uncle Bob)
+// SRP "Single Responsibility Principle"
+
+outputNamesSRP("Rene","Heißt anders als du");
+
+function outputNamesSRP(firstname, familyname) {    //Parameter
+
+    // 1. Funktionalität: string composing
+    const GAP = " ";
+    let outputString = "Hallo, " + firstname + GAP + familyname + "!"
+
+    // 2. Funktionalität: string output
+    console.log(outputString);
+
+}
+
+
+
