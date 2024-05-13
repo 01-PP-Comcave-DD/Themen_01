@@ -72,7 +72,7 @@ const firstName = "Jane";
 let job;
 
 job = "driver";          // .. fährt TAXI! / UBER
-job = "diver";           // .. taucht im Rhein!
+job = "diver";           // .. taucht im Wasser!
 job = "artist";          // .. malt ein Bild!
 job = "pilot";           // .. macht etwas anderes! --> default
 job = "teacher";         // .. unterrichtet!
@@ -84,7 +84,7 @@ switch (job)
         console.log(firstName + ".. fährt TAXI");
         break;
     case "diver":        //Test auf Gleichheit
-        console.log(firstName + ".. taucht im Rhein");
+        console.log(firstName + ".. taucht im Wasser");
         break;
     case "artist":       //Test auf Gleichheit
         console.log(firstName + ".. malt ein Bild");
