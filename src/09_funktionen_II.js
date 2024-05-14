@@ -49,13 +49,25 @@ output(divi(6,2));
 output(divi(0,0));
 function divi(a,b) {
 
-	if (b !== 0) {
-		return a / b;
-	} else {
-		return "Sry Großer, durch 0 kannst nicht teilen!"
+	// if (b !== 0) {							// Frage nach der Regel "wenn b=0, dann ......"
+	// 	return a / b;
+	// } else {
+	// 	return "Sry Großer, durch 0 kannst nicht teilen!"
+	// }
+
+	// if (b == 0) {						     	// Frage nach der Regel "wenn b "ungleich"0, dann ......"
+	// 	return "Sry Großer, durch 0 kannst nicht teilen";
+	// } else {
+	// 	return a / b;
+	// }
+
+	if (b == 0) {						     	// Frage nach der Regel "wenn b "ungleich" 0, dann ......, ohne else"
+		return "Sry Großer, durch 0 kannst nicht teilen";
 	}
 
-}
+		return a / b;
+	}
+
 
 
 
