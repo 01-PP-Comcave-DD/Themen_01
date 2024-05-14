@@ -61,12 +61,12 @@ console.log(name + " trinkt " + drink + ".");
 
 // switch (cond) {
 //     case (value == 1):
-//         console.log("Milch");
+//         console.log("Value hat den Wert 1.");
 //         break;
 //     case (value == 2):
-//         console.log("Saft");
+//         console.log("Value hat den Wert 2.");
 //         break;
 //     default:
-//         console.log("Wein");
+//         console.log("Value hat einen anderen Wert.");
 //         break;
 // }
