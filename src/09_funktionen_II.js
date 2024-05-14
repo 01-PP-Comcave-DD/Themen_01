@@ -4,13 +4,31 @@
 /*
 0. a+b | a-b | a*b | a/b  --> Ergebnis c 
 
-1. Dateneingabe + -überprüfung :  		
+1. Dateneingabe + -überprüfung :  		!?????!
 2. Auswahl Rechenart : 					!check!
 3. Fkt (Funktionen). Grundrechenarten : !check!
 4. Ausgabe in Konsole : 				!check!
 */
 
-const ERROR_STR_GEN = "Irgendwas ging schief, schau nochmal genau hin!";			// fehlerstring
+const prompt = require('prompt-sync')({sigint: true});
+const ERROR_STR_GEN = "Irgendwas ging schief, schau nochmal genau hin!"			// fehlerstring
+const ERROR_STR_DIV = "Sry Großer, durch 0 kannst nicht teilen!";
+
+startApp();
+function startApp() {
+	output(calculator(getNum1(),getNum2(),getOp()));
+}
+
+function getNum1() {
+	return parseInt(prompt("Zahl1: "));			//parsInt (ganzzahlen) parsFlow (mit Kommazahlen)
+}
+function getNum2() {
+	return parseInt(prompt("Zahl2: "));
+}
+function getOp() {
+	return prompt("Rechenart: "); 
+}
+
 
 
 // module: calculator | test:
@@ -97,7 +115,7 @@ function divi(a,b) {
 	// }
 
 	if (b == 0) {						     	// Frage nach der Regel "wenn b "ungleich" 0, dann ......, ohne else"
-		return "Sry Großer, durch 0 kannst nicht teilen";
+		return ERROR_STR_DIV;
 	}
 
 		return a / b;
