@@ -36,9 +36,15 @@
 //     output("index: " + i);
 // }
 
+//------------------------------------------------//
 
+/* 02b. For-Schleife für Array-Index (Iteration)*/
 
-
+let arr = ["Ich","bin","die","coole","Maxine","Mützerich"];
+for (let i = 0; i < arr.length; i++) {      // i = Schleifenindex (interner Schleifenindex)
+    output("index: " + i);
+    output("extern: " + arr[i]);            // Mapping
+}
 
 
 
