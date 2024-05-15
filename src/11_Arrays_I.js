@@ -16,6 +16,28 @@
 // output(arr[4])                  // Index 4 ist in diesem Beispiel die letzte Zahl(Element)
 // output(arr[arr.length-1])       // zeigt nun "automatisch" die letzte zahl an
 
+//------------------------------------------------//
+
+/* 02a. Theorie: Schleifen (for-schleife) */
+/* For -Schleifen als allg. Wiederholungs-Struktur */
+
+// // Inkrement ((i = 0) untere Grenze --> (i < 10) obere Grenze)
+// for (let i = 0; i < 10; i++) {      // i = Schleifenindex (interner Schleifenindex)
+//     output("index: " + i);
+// }
+
+// // Dekrement ((i = 0) obere Grenze --> (i < 10) untere Grenze)
+// for (let i = 10; i >= 0; i--) {      // i = Schleifenindex (interner Schleifenindex)
+//     output("index: " + i);
+// }
+
+// // Inkrement klein nach groß (var. Schrittweite) in 5er Schritten
+// for (let i = 0; i <= 100; i += 5) {      // i = Schleifenindex (interner Schleifenindex)
+//     output("index: " + i);
+// }
+
+
+
 
 
 
@@ -52,7 +74,7 @@ function getSentence(word1,word2,word3,word4,word5,word6) {
 // --> Transformation semantisches Problem --> numerisches Problem
 // output(getSentenceArr(["Ich","bin","die","coole","Maxine","Mützerich"]));
 
-output(getSentenceArr(["Ich","bin","die","coole","Maxine","Mützerich"]));
+// output(getSentenceArr(["Ich","bin","die","coole","Maxine","Mützerich"]));
 function getSentenceArr(arr) {
     const GAP = " ";
     const PUNCT = ".";
